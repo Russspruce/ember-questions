@@ -1,6 +1,6 @@
-import Model from 'ember-data';
+import DS from 'ember-data';
 export default DS.Model.extend({
   asker: DS.attr(),
-  question: DS.attr(),
+  request: DS.attr(),
   info: DS.attr()
 });
