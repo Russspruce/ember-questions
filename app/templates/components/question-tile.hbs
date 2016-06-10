@@ -1,4 +1,2 @@
-<li><h2>{{question.request}}</h2>
-  {{update-question question=question update="update"}}
-  <button {{action 'delete' question}}>Delete</button>
+<li><h2>{{#link-to 'question' question.id}}{{question.request}}{{/link-to}}</h2>
 </li>
