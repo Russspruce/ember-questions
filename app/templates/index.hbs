@@ -4,6 +4,6 @@ Looking for an answer?  Well, ask the question here first.
 
 <ul>
   {{#each model as |question|}}
-<li>{{question.question}}</li>
+    {{question-tile question=question deleteQuestion="deleteQuestion"}}
   {{/each}}
 </ul>
