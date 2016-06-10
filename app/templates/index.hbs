@@ -1,1 +1,9 @@
-{{outlet}}
+<h1>Question Time?</h1>
+
+Looking for an answer?  Well, ask the question here first.
+
+<ul>
+  {{#each model as |question|}}
+     {{question.question}}
+  {{/each}}
+</ul>
