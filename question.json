@@ -11,5 +11,9 @@
     "request": "Can sour balls burn a hole in your mouth?",
     "info": "I ate a few too many, now I keep tasting blood and my cheek burns."
 
-}]
+}],
+"answers": [{
+  "name": "Michael Jones",
+  "reply": "You shouldn't have done that."
+  }]
 }

@@ -4,7 +4,11 @@ export default Ember.Component.extend({
   updateQuestionForm: false,
   actions: {
     updateQuestionForm() {
+      debugger;
       this.set('updateQuestionForm', true);
+    },
+    saveAnswer(answer, params) {
+      this.sendAction('saveAnswer2', answer, params);
     },
     update(question) {
       var params = {

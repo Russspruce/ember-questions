@@ -10,7 +10,7 @@ export default Ember.Component.extend({
     save1() {
       var params = {
         asker: this.get('asker'),
-        question: this.get('request'),
+        request: this.get('request'),
         info: this.get('info')
       };
       this.set('addNewQuestion', false);

@@ -3,4 +3,14 @@
   <br>
 <h3>{{question.info}}</h3>
 
-<button {{action 'delete' question}}>Delete</button>
+{{#each question.answers as |answer|}}
+   <div class="single-answer">
+     {{answer-tile answer=answer}}
+   </div>
+ {{/each}}
+
+ {{new-answer saveAnswer2="saveAnswer3" question=model}}
+
+<!-- <button {{action 'update' question}}>Update!</button>
+{{update-question question=model update="update"}}
+<button {{action 'delete' question}}>Delete</button> -->

@@ -3,9 +3,17 @@
 Looking for an answer?  Well, ask the question here first.
 
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
     {{question-tile question=question}}
   {{/each}}
 </ul>
 
 {{new-question save2="save3"}}
+
+<h2> Temp Answer test </h2>
+
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.name}}</li>
+  {{/each}}
+</ul>
