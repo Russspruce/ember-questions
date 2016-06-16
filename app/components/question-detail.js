@@ -12,9 +12,9 @@ export default Ember.Component.extend({
        }
       },
 
-      saveAnswer(answer, params) {
+      saveAnswer(params, answer) {
       console.log(params);
-        this.sendAction('saveAnswer', answer, params);
+        this.sendAction('saveAnswer', params, answer);
       }
 
  }
