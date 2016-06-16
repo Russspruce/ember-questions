@@ -29,6 +29,9 @@ export default Ember.Route.extend({
       });
       this.transitionTo('question', params.question);
     },
+    deleteAnswer(answer) {
+      answer.destroyRecord();
+    }
 
     }
 });

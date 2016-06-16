@@ -15,6 +15,9 @@ export default Ember.Component.extend({
       saveAnswer(params, answer) {
       console.log(params);
         this.sendAction('saveAnswer', params, answer);
+      },
+      deleteAnswer(answer) {
+        this.sendAction('deleteAnswer', answer);
       }
 
  }

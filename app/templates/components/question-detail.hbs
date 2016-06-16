@@ -1,11 +1,12 @@
 <h1>{{question.request}}</h1>
 <h4>{{question.asker}}</h4>
-  <br>
+  <hr>
 <h3>{{question.info}}</h3>
-
+<hr>
+<h3>Comments:</h3>
 {{#each question.answers as |answer|}}
    <div class="single-answer">
-     {{answer-tile answer=answer}}
+     {{answer-tile answer=answer deleteAnswer="deleteAnswer"}}
    </div>
  {{/each}}
 
